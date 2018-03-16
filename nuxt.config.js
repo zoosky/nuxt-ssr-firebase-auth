@@ -34,16 +34,16 @@ module.exports = {
     // '@nuxtjs/pwa'
   ],
   plugins: [
-    {src: '~/plugins/vuetify.js', ssr: true },
-    {src: '~/plugins/firebase-client-init.js', ssr: false },
-    {src: '~/plugins/auth-cookie.js', ssr: false },
-    {src: '~/plugins/web-font-loader.js', ssr: false }
+    { src: '~/plugins/vuetify.js', ssr: true },
+    { src: '~/plugins/firebase-client-init.js', ssr: false },
+    { src: '~/plugins/auth-cookie.js', ssr: false },
+    { src: '~/plugins/web-font-loader.js', ssr: false }
   ],
   serverMiddleware: [
-      '~/serverMiddleware/validateFirebaseIdToken'
+    '~/serverMiddleware/validateFirebaseIdToken'
   ],
   css: [
-    { src: '~/assets/css/main.css', lang: 'css'},
-    { src: '~/assets/css/app.styl', lang: 'styl'}
+    { src: '~/assets/css/main.css', lang: 'css' },
+    { src: '~/assets/css/app.styl', lang: 'styl' }
   ]
 }
